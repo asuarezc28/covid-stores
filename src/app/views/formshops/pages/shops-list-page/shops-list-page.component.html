@@ -1,0 +1,10 @@
+ <div id="contentList"> 
+ <ul>
+  <!-- <div class="boxShop" *ngFor="let shop of shops" (click)="goToDetail(shop.id)" >{{shop.name}}</div> -->
+  <div class="boxShop">
+  <button id="elementList" type="button"class="btn btn-secondary"  *ngFor="let shop of shops" (click)="goToDetail(shop.id)" >{{shop.name}}</button>
+</div>
+</ul>
+</div>
+
+

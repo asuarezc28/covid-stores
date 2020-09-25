@@ -1,0 +1,42 @@
+label {
+  color: white;
+}
+
+input {
+  background-color: #686369;
+  color: white;
+}
+
+textarea {
+  background-color: #686369;
+  color: white;
+  width: 242px;
+}
+
+.submitButton {
+  background-color: #969696;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#contenFrom {
+  height: calc(100% - 60px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icons {
+  position: relative;
+  top: -8px;
+  left: -12px;
+}
+
+#btn-secondary {
+  height: 25px;
+  width: 5px;
+  margin: 5px;
+}

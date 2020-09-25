@@ -1,0 +1,25 @@
+:host {
+    color: white;
+    float: left;
+    display: block;
+    margin-top: 0;
+    width: 300px;
+    background: white;
+    height: calc(100% - 140px);
+    .active-route {
+        color: white;
+    }
+}
+
+.mainContainer {
+    background-color: #353335;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.linkMenu {
+    color: #969696;
+}

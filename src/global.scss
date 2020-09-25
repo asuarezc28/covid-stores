@@ -1,0 +1,89 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/* Styles for primeng */
+
+@import "~primeicons/primeicons.css";
+@import "~primeng/resources/themes/nova-light/theme.css";
+@import "~primeng/resources/primeng.min.css";
+
+/* Styles for bootstrap */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@import url("https://fonts.googleapis.com/css?family=Alegreya&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Alegreya|Roboto+Mono&display=swap");
+
+.swal-button swal-button--confirm {
+  background-color: #424858 !important;
+}
+
+.esri-view-height-less-than-medium .esri-popup__main-container {
+  max-height: 300px;
+  background: #353335 !important;
+  color: white !important;
+}
+
+.esri-component esri-popup esri-popup--aligned-top-center esri-popup--shadow {
+  background: #353335 !important;
+  color: white !important;
+}
+
+.esri-feature__main-container {
+  background: #353335 !important;
+  color: white;
+}
+
+.esri-widget__table {
+  color: white !important;
+}
+
+.esri-popup__header {
+  background: #353335 !important;
+  color: white !important;
+}
+
+
+
+.esri-popup__content {
+  background: #353335 !important;
+  color: white !important;
+}
+
+.esri-popup__main-container{
+  background: #353335 !important;
+  color: white !important;
+}
+
+.esri-popup__footer {
+  background: #353335 !important;
+  color: white !important;
+}

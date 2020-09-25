@@ -1,0 +1,18 @@
+<div id="cardLog" class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div id="HeadCard" class="card-header">
+        <p id="titleUser">User Profile</p>
+        <button class="btn btn-secondary" id="buttonLog" (click)="authService.SignOut()">
+            <p  *ngIf="authService.userData else loggedOut"
+                class="fas fa-sign-out-alt">{{authService.userData.login}}</p>
+            <ng-template #loggedOut>
+                <p>Log in</p>
+            </ng-template>
+        </button>
+    </div>
+    <div class="card-body" *ngIf="authService.userData && authService.userData.displayName != '' ">
+        <p class="card-title">Hello: {{(authService.userData.displayName) ? authService.userData.displayName : ' '}}</p>
+        <p class="card-text">User ID: {{authService.userData.uid}}</p>
+        <p class="card-text">Email: {{authService.userData.email}}</p>
+        <p class="card-text">Email Verified: {{authService.userData.emailVerified}}</p>
+    </div>
+</div>

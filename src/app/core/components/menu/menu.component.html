@@ -1,0 +1,9 @@
+<mat-sidenav-container class="mainContainer">
+    <mat-sidenav-content>
+        <mat-nav-list>
+            <div *ngFor="let link of links">
+                <a class="linkMenu" mat-list-item [routerLink]="link.url" routerLinkActive="active-route">{{link.label}}</a>
+            </div>
+        </mat-nav-list>
+    </mat-sidenav-content>
+</mat-sidenav-container>

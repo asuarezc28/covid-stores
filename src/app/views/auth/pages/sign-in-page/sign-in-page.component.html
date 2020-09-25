@@ -1,0 +1,26 @@
+<div class="cardLog" class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-body">
+        <h2 class="card-title">Login</h2>
+        <div class="formGroup">
+            <span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText>
+                <label for="float-input">Username</label>
+            </span>
+        </div>
+        <div class="formGroup">
+            <span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText>
+                <label for="float-input">Password</label>
+            </span>
+        </div>
+        <div class="formGroup">
+            <span class="or"><span class="orInner">Or</span></span>
+        </div>
+        <div class="formGroup">
+            <button type="button" class="btn btn-secondary" (click)="authService.GoogleAuth()">
+                <i class="fab fa-google-plus-g"></i>
+                Log in with Google
+            </button>
+        </div>
+    </div>
+</div>

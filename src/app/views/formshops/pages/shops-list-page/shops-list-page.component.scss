@@ -1,0 +1,22 @@
+.list {
+  color: white;
+}
+
+.boxShop {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+#contentList {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#elementList{
+  margin-bottom: 10px; 
+}

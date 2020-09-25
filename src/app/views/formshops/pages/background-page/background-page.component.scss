@@ -1,0 +1,34 @@
+a {
+  color: white; 
+}
+
+.router {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 50px;
+  width: 100px;
+  background-color: #424858;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.contentRouters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    margin-top: 10px;
+}
+
+
+#router {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 50px;
+  width: 100px;
+  background-color: #424858;
+  border-radius: 10px 10px 10px 10px;
+  border: none; 
+  font-size: 16px;
+  padding: 0px; 
+}

@@ -1,0 +1,118 @@
+.mainContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  flex-direction: row;
+}
+
+.tittleBox {
+  height: 50px;
+  width: 100%;
+  background-color: #424858;
+  display: flex;
+  flex-direction: row;
+  //   border-bottom: 1px solid white;
+  border: 1px solid #a6a6a6;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 2px;
+  align-items: center;
+}
+
+#tittleBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #424858;
+}
+
+.swal-button swal-button--confirm {
+  background-color: #424858 !important;
+}
+
+.deleteComBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bodyBox {
+  height: 180px;
+  width: 100%;
+  background-color: #424858;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: 1px solid #a6a6a6;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#btn-secondary {
+  height: 25px;
+  width: 5px;
+  margin: 5px;
+}
+
+#icons {
+  position: relative;
+  top: -8px;
+  left: -12px;
+}
+
+#Body {
+  background-color: #424858;
+}
+
+label {
+  color: white;
+}
+
+input {
+  background-color: #686369;
+  color: white;
+}
+
+textarea {
+  background-color: #686369;
+  color: white;
+  width: 242px;
+}
+
+.submitButton {
+  background-color: #969696;
+  color: white;
+  width: 40px;
+  height: 30px;
+  border-radius: 10px 10px 10px 10px;
+  margin: 10px;
+}
+
+.submitButtonModify {
+  background-color: #969696;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.contenBigBox {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: white;
+  margin-left: 5px;
+}
+
+#buscador {
+  margin: 30px; 
+  visibility: hidden;
+}
+
+#cardInfo {
+  max-width: 18rem;
+  height: 250px;
+  margin: 30px;
+}
