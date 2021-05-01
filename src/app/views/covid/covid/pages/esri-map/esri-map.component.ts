@@ -14,7 +14,7 @@ import { SelectItem } from 'primeng/api';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Router } from '@angular/router';
 import { Shops } from 'src/app/core/models/shops';
-import { SuperheroService } from 'src/app/core/services/superhero.service';
+import { covidDataService } from 'src/app/core/services/covid-data.service';
 
 
 @Component({
@@ -73,7 +73,7 @@ export class EsriMapComponent implements OnInit, OnDestroy {
   constructor(
     private firestore: AngularFirestore,
     private router: Router,
-    private superheroService: SuperheroService,
+    private covidDataService: covidDataService,
   ) { }
 
 
@@ -126,6 +126,7 @@ export class EsriMapComponent implements OnInit, OnDestroy {
             }
           };
           dataArray.push(points);
+          console.log('dataArray', dataArray);
         }
  
 

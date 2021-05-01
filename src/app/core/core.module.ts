@@ -6,7 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CoreRoutingModule } from './core-routing.module';
-import { SuperheroService } from './services/superhero.service';
+import { covidDataService } from './services/covid-data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { AngularFireModule } from '@angular/fire';
@@ -51,7 +51,7 @@ import { MatButtonModule } from '@angular/material/button';
     RouterModule
   ],
   providers: [
-    SuperheroService,
+    covidDataService,
     AuthService
   ]
 })

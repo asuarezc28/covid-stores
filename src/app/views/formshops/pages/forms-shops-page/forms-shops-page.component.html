@@ -1,60 +1,39 @@
 <div id="contenFrom">
-  <form [formGroup]="newShopFrom" (ngSubmit)="onSubmit()">
-    <span class="ui-float-label">
+    <form [formGroup]="newShopFrom" (ngSubmit)="onSubmit()">
+        <span class="ui-float-label">
       <input id="float-input" type="text" size="30" formControlName="shopName" pInputText>
       <label for="float-input">Shop Name</label>
     </span>
-    <br>
-    <!-- <label> Shop Name:
-    <br>
-    <input type="text"  pInputText formControlName="shopName">
-  </label> -->
-    <label> Opening Hours:
+        <br>
+        <label> Opening Hours:
       <br>
       <input type="time" pInputText formControlName="openHour">
     </label>
-    <br>
-    <label> Closing Hours:
+        <br>
+        <label> Closing Hours:
       <br>
       <input type="time" pInputText formControlName="closeHour">
     </label>
-    <br>
-    <br>
-    <span class="ui-float-label">
+        <br>
+        <br>
+        <span class="ui-float-label">
       <input id="float-input" type="text" size="30" formControlName="latitude" pInputText>
       <label for="float-input">Latitude</label>
     </span>
-    <!-- <label> Latitude:
-    <br>
-    <input type="number" formControlName="latitude">
-  </label> -->
-    <br>
-    <!-- <label> Longitude:
-    <br>
-    <input type="number" formControlName="longitude">
-  </label> -->
-    <span class="ui-float-label">
+        <br>
+        <span class="ui-float-label">
       <input id="float-input" type="text" size="30" formControlName="longitude" pInputText>
       <label for="float-input">Longitude</label>
     </span>
-    <br>
-    <label> Comentaries:
+        <br>
+        <label> Comentaries:
       <br>
       <textarea pInputTextarea size="30" formControlName="comentarie"></textarea>
     </label>
-    <!-- <label> Comentaries:
-    <br>
-    <textarea formControlName="comentarie"></textarea>
-  </label> -->
-    <br>
-    <!-- <button class="submitButton" type="submit" [disabled]=!newShopFrom.valid> <span class="material-icons">
-        done_outline
-      </span> </button> -->
-
-      <button id="btn-secondary" class="btn btn-secondary" type="submit" [disabled]=!newShopFrom.valid> <span id="icons"
+        <br>
+        <button id="btn-secondary" class="btn btn-secondary" type="submit" [disabled]=!newShopFrom.valid> <span id="icons"
         class="material-icons">
         done_outline
       </span> </button>
-      
-  </form>
+    </form>
 </div>

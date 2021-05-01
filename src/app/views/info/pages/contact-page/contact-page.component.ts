@@ -16,9 +16,9 @@ export class ContactPageComponent implements OnInit {
 
   ngOnInit() {
     this.notificationServiceVit.getMessagesVitamined().subscribe(data => {
-      console.log('AppContact notified:' + data);
+      // console.log('AppContact notified:' + data);
     });
-    this.notificationService.notify('Hola desde contact');
+    // this.notificationService.notify('Hola desde contact');
   }
 
 }

@@ -41,7 +41,6 @@ export class ShopDetailPageComponent implements OnInit {
   ngOnInit() {
     this.itemDoc = this.firestore.doc<Shops>(AppCollections.quarenteneCollection + '/' + this.route.snapshot.paramMap.get('id'));
     this.identificator = this.route.snapshot.paramMap.get('id');
-    console.log(this.identificator);
     this.itemDoc.valueChanges().subscribe(data => {
       this.item = data;
       if (this.item != undefined) {
@@ -82,7 +81,7 @@ export class ShopDetailPageComponent implements OnInit {
       uid = user.uid;
     }
     if (email === "asuarezc91@gmail.com") {
-      this.firestore.collection("quarenteneStore").doc(id).delete().then(function () { console.log("good") }).catch(function (error) { console.log("error", error) });
+      this.firestore.collection("quarenteneStore").doc(id).delete().then(function () { console.log("shop deleted") }).catch(function (error) { console.log("error", error) });
     } else {
       alert("You can't delete this item");
     }

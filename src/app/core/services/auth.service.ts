@@ -32,7 +32,6 @@ export class AuthService {
                     login: "Log out"
                 };
                 this.userData = userD;
-                console.log(this.userData);
                 localStorage.setItem('user', JSON.stringify(this.userData));
                 JSON.parse(localStorage.getItem('user'));
             } else {

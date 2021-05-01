@@ -14,7 +14,7 @@ import { SelectItem } from 'primeng/api';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Router } from '@angular/router';
 import { Shops } from 'src/app/core/models/shops';
-import { SuperheroService } from 'src/app/core/services/superhero.service';
+import { covidDataService } from 'src/app/core/services/covid-data.service';
 
 
 @Component({
@@ -74,7 +74,7 @@ export class EsriMapComponent implements OnInit, OnDestroy {
   constructor(
     private firestore: AngularFirestore,
     private router: Router,
-    private superheroService: SuperheroService,
+    private covidDataService: covidDataService,
   ) { }
 
 
@@ -100,8 +100,7 @@ export class EsriMapComponent implements OnInit, OnDestroy {
 
       const map: esri.Map = new EsriMap(mapProperties);
 
-      this.superheroService.getCovidData().subscribe(data => {
-        console.log(data); 
+      this.covidDataService.getCovidData().subscribe(data => {
         let confirmed = data.confirmed;
         let locations = confirmed.locations;
         let last_updated = confirmed.last_updated;

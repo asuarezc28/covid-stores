@@ -18,7 +18,6 @@ export class ShopsListPageComponent implements OnInit {
 
 
   ngOnInit() {
-
     this.firestore.collection('quarenteneStore').snapshotChanges().subscribe(data => {
       this.shops = data.map(elem =>
         new Shops(elem.payload.doc.data()['closeHour'], elem.payload.doc.data()['latitude'], elem.payload.doc.data()['longitude'], elem.payload.doc.data()['name'],elem.payload.doc.data()['openHour'], elem.payload.doc.id,elem.payload.doc.data()['comentarie']));
@@ -31,10 +30,9 @@ export class ShopsListPageComponent implements OnInit {
 
 
   goToDetail(id: string) {
-    // TODO: fix this url
     this.router.navigate([AppURl.AppFormBackgroundShops, 'detail', id]);
   }
-  // AppFormBackgroundShops
+
 }
 
 

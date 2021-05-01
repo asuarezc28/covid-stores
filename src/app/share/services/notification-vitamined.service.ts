@@ -13,8 +13,6 @@ export class NotificationVitaminedService {
     private notificationService: NotificationService
   ) {
     this.notificationService.getMessages().subscribe(data => {
-      console.log('Evento capturado por servico vitaminado: ' + data)
-      this.observer.next(data + ' molando mas.');
     });
   }
 

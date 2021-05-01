@@ -15,7 +15,7 @@ import { SelectItem } from 'primeng/api';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Router } from '@angular/router';
 import { Shops } from 'src/app/core/models/shops';
-import { SuperheroService } from 'src/app/core/services/superhero.service';
+import { covidDataService } from 'src/app/core/services/covid-data.service';
 
 
 @Component({
@@ -74,7 +74,7 @@ export class EsriMapComponent implements OnInit, OnDestroy {
   constructor(
     private firestore: AngularFirestore,
     private router: Router,
-    private superheroService: SuperheroService,
+    private covidDataService: covidDataService,
   ) { }
 
 
@@ -90,7 +90,6 @@ export class EsriMapComponent implements OnInit, OnDestroy {
         "esri/renderers/SimpleRenderer",
         "esri/renderers/Renderer",
         "esri/geometry/geometryEngine"
-
       ]);
 
 
@@ -109,7 +108,6 @@ export class EsriMapComponent implements OnInit, OnDestroy {
         for (let i = 0; i < this._shops.length; i++) {
           cont++;
           const element = this._shops[i];
-          console.log(element); 
           const latitude = element.latitude;
           const longitude = element.longitude;
           const name = element.name;
@@ -192,15 +190,15 @@ export class EsriMapComponent implements OnInit, OnDestroy {
           spatialReference: { wkid: 4326 },
           source: dataArray,
           renderer: {
-            type: "simple",
+            type: 'simple',
             label: "",
             description: "",
             symbol: {
               type: "picture-marker",
-              url: 'data:image/png;base64,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',
-              width: '50px',
-              height: '50px'
-            }
+              url: 'https://static.arcgis.com/images/Symbols/Firefly/FireflyC1.png',
+              width: '24px',
+              height: '24px'
+            },
           },
           popupTemplate: template
         });

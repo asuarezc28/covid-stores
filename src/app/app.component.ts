@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.notificationService.getMessages().subscribe(data => {
-      console.log('AppComponent notified:' + data);
+
     });
   }
 
