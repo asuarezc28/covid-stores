@@ -181,7 +181,7 @@ export class EsriMapComponent implements OnInit, OnDestroy {
         map.layers.add(this._featureL);
 
       }, err => {
-        console.log('Error getCovidData: ' + err);
+        console.log('Error getCovidData: ' + err); 
       });
 
       const mapViewProperties: esri.MapViewProperties = {
